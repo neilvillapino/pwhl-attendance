@@ -1,0 +1,122 @@
+/* Colors and fonts */
+:root {
+  --purple: #3b2a7a;
+  --purple-light: #ece9f6;
+  --text: #222222;
+  --muted: #666666;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+/* Keeps content readable on every screen size */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background: var(--purple);
+  color: #ffffff;
+  padding: 2rem 0 1.5rem;
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.headline {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.byline {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Story */
+.story {
+  padding-top: 1.5rem;
+}
+
+.story p {
+  margin: 0 0 1.25rem;
+}
+
+/* Marks text you still need to replace. Delete these paragraphs' class when done. */
+.placeholder {
+  background: #fff6d6;
+  border-left: 4px solid #e0b400;
+  padding: 0.5rem 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Charts */
+.chart {
+  margin: 1.75rem 0;
+}
+
+.chart iframe {
+  display: block;
+  max-width: 100%;
+}
+
+/* Sources and methodology */
+.sources {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--purple-light);
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sources h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--purple);
+}
+
+.sources a {
+  color: var(--purple);
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid #dddddd;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+/* Larger headline on bigger screens */
+@media (min-width: 700px) {
+  .headline {
+    font-size: 2.5rem;
+  }
+}
